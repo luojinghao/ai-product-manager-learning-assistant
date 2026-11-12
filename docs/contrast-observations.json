@@ -1,0 +1,61 @@
+{
+  "method": "Computed text contrast against ancestor solid colors; excludes SVG, disabled and inert content. Manual visual review supplements sampling; not a full accessibility audit.",
+  "contrast": [
+    {
+      "route": "home",
+      "count": 114,
+      "failures": []
+    },
+    {
+      "route": "curriculum",
+      "count": 454,
+      "failures": []
+    },
+    {
+      "route": "plan",
+      "count": 77,
+      "failures": []
+    },
+    {
+      "route": "lesson/optimization-2",
+      "count": 81,
+      "failures": []
+    },
+    {
+      "route": "projects",
+      "count": 62,
+      "failures": []
+    },
+    {
+      "route": "labs",
+      "count": 56,
+      "failures": []
+    },
+    {
+      "route": "settings",
+      "count": 38,
+      "failures": []
+    },
+    {
+      "route": "resources",
+      "count": 68,
+      "failures": []
+    },
+    {
+      "route": "notes",
+      "count": 31,
+      "failures": []
+    },
+    {
+      "route": "review",
+      "count": 62,
+      "failures": []
+    },
+    {
+      "route": "search",
+      "count": 35,
+      "failures": []
+    }
+  ],
+  "errors": []
+}

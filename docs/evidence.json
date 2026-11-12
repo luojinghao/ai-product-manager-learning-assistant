@@ -1,0 +1,34 @@
+{
+  "contract": "design-contract.md: local Chinese learning workspace for a supply-chain PM, with course reading, principle experiments, assessments, persistent notes and verifiable projects. No claim that coursework certifies five years of experience.",
+  "targetViewports": ["1440x900", "390x844"],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Playwright checks keyboard skip without changing hash route; Arrow/Home/End lesson tabs with associated panels; mobile dialog focus containment, Escape and restored focus; inert hidden navigation/background; radio and textbox labels; reduced-motion disables neural animation. Rendered desktop/mobile inspection confirms legible text and visible controls. Computed solid-color text contrast sampling across 11 routes found zero failures after refinements (contrast-observations.json). Sampling excludes SVG, disabled and inert nodes and is not a full WCAG audit. Main mobile menu, primary actions and drawer close have stable accessible controls; checkbox labels enlarge their clickable area."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "All 80 lessons checked at 1440x900 and 390x844. Main routes have no document horizontal overflow. Desktop and mobile screenshots reviewed for home, course, experiment, project and drawer. Chapter tables intentionally scroll inside their own container. Mobile lab tabs scroll independently. Screenshots wait for sidebar transition completion."
+  },
+  "contentStates": {
+    "loading": { "status": "pass", "evidence": "Lazy-load lab request held by Playwright: stable minimum-height status shown, then released and interactive region rendered. loading-lab.png." },
+    "empty": { "status": "pass", "evidence": "Empty notes provides a first-note action (empty-notes.png); no-match course search provides clear-search action, verified by browser test." },
+    "error": { "status": "pass", "evidence": "Invalid JSON schema import produces a specific error without changing records (error-backup.png). Corrupt saved record is preserved until valid import; original raw record and current session can be exported." },
+    "partial": { "status": "pass", "evidence": "partial-progress.png contains one completed lesson and one note with zero self-checked projects. Course progress is explicitly separate from external project acceptance." },
+    "success": { "status": "pass", "evidence": "Browser study test corrects a wrong answer, observes success feedback, saves notes and completion through reload, exports JSON, merges a valid backup, persists project template and checklist." },
+    "permission": { "status": "pass", "evidence": "Blocked localStorage writes show temporary-only warning and export action without blank page. storage-permission.png and automated rejection test." }
+  },
+  "renderedEvidence": [
+    { "viewport": "1440x900", "artifact": "desktop.png", "observation": "Learning dashboard with current lesson, animated neural diagram, five stages and progress. Main content has distinct hierarchy and no overlap." },
+    { "viewport": "1440x900", "artifact": "desktop-lesson.png", "observation": "Gradient lesson has explanation, process diagram, formula, supply-chain example, full worked calculation table and actionable tasks." },
+    { "viewport": "1440x900", "artifact": "desktop-project.png", "observation": "Project baseline instructions, deliverables and working draft align in a readable desktop layout." },
+    { "viewport": "390x844", "artifact": "mobile.png", "observation": "Dashboard stacks into a single column. Text wraps inside available width and sidebar is hidden when closed." },
+    { "viewport": "390x844", "artifact": "mobile-lesson.png", "observation": "Lesson text, wrapping process flow and navigation remain readable; wide calculation table uses contained horizontal scrolling." },
+    { "viewport": "390x844", "artifact": "mobile-lab.png", "observation": "Nonblank gradient plot and stable slider, metrics, step/play/reset controls. Tabs scroll inside their own row." },
+    { "viewport": "390x844", "artifact": "mobile-drawer.png", "observation": "Open drawer exposes complete navigation and close button, with background unavailable to keyboard interaction." },
+    { "viewport": "1440x900", "artifact": "loading-lab.png", "observation": "Lazy experiment loading state has status feedback and reserved space." },
+    { "viewport": "1440x900", "artifact": "empty-notes.png", "observation": "Empty notebook provides an action to start recording a course note." },
+    { "viewport": "1440x900", "artifact": "error-backup.png", "observation": "Malformed import reports failure while keeping the settings recovery actions accessible." },
+    { "viewport": "1440x900", "artifact": "partial-progress.png", "observation": "Partly learned state distinguishes completed course count, notes and project self-checks." },
+    { "viewport": "1440x900", "artifact": "storage-permission.png", "observation": "Storage permission failure shows temporary-state warning and backup action above usable lessons." }
+  ]
+}
