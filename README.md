@@ -4,7 +4,7 @@
 
 **[在线学习](https://luojinghao.github.io/ai-product-manager-learning-assistant/) · [中文操作手册](docs/user-guide.md) · [安装与部署](docs/deployment.md) · [项目实践指南](docs/project-playbook.md)**
 
-在线入口需要 GitHub Actions 发布成功；首次 404 时，请到仓库 Actions 查看部署状态。
+已通过 GitHub Pages 发布，可直接把在线学习链接分享给其他电脑和手机。更新时请等待 GitHub Actions 部署成功。
 
 ![学习工作台](docs/desktop.png)
 

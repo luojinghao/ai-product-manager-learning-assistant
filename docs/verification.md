@@ -1,6 +1,20 @@
-# 本地学习助手交付记录
+# 学习助手交付与发布记录
 
-验证日期：2026-11-12。地址：http://127.0.0.1:5173/ 。本机版，不是公网部署。
+验证日期：2026-11-12。
+
+- 在线网站：https://luojinghao.github.io/ai-product-manager-learning-assistant/
+- 源码仓库：https://github.com/luojinghao/ai-product-manager-learning-assistant
+- 本地地址：http://127.0.0.1:5173/
+
+## GitHub 发布验证
+
+首次发布提交：c6979e054b838ee524ab7e3672413357249e8f09。
+
+[首次工作流运行](https://github.com/luojinghao/ai-product-manager-learning-assistant/actions/runs/43152461082)的 build 和 deploy 均成功，总耗时 1 分 17 秒。云端执行依赖安装、6 项内容与逻辑测试、10 项浏览器测试、正式构建后发布。
+
+已在 Chrome 打开正式网站，确认首页有内容、第一课正常打开、课程 hash 地址刷新正常、实验独立资源加载成功；梯度下降点击“走一步”，权重由 -1.000 变为 -0.200，损失由 16.0000 变为 10.2400。正式构建资源使用相对路径，适配仓库子路径。
+
+README 提供在线入口、源码运行步骤和学习路径；[操作手册](user-guide.md)覆盖各页使用、学习、实验、项目和备份迁移；[部署指南](deployment.md)覆盖本地安装、自动发布、更新与排障。公开仓库没有包含依赖目录、构建产物、日志、密钥或个人学习备份。
 
 ## 需求与交付
 
